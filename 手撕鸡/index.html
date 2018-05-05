@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>手撕鸡</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/up.js"></script>
+</head>
+<body>
+	<div class="topBar">
+	  <div id="main">
+		<div class="topBar-left fl">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="关于我们（2）.html">百年传承</a></li>
+			</ul>
+		</div>
+		<div class="topBar-center fl">
+			<div style="border: 1px solid #fff;width: 80px;height: 80px;margin: 20px auto;"></div>
+		</div>
+		<div class="topBar-right fl">
+			<ul>
+				<li><a href="品牌打造.html">品牌打造</a></li>
+				<li><a href="产品中心.html">产品中心</a></li>
+				<li><a href="加入我们.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div style="clear: both"></div>
+	  </div>
+	</div>
+	
+  	<div class="section">
+  	  
+		<div class="slide slide1"></div>
+		<div class="slide slide2">
+		  <div class="w">
+			<div class="title">
+				<img src="images/title.png">
+				<dir class="title-info">
+                	<div><p>滋滋入味</p></div>
+                	<div><p>香熟鲜嫩</p></div>
+                	<div><p>润而不腻</p></div>
+                	<div><p>鲜香醇厚</p></div>
+                	<div><p>五香透骨</p></div>
+			    </div>
+			</div>
+          </div>
+		<div class="slide slide3"></div>
+
+		<div class="ctrl">
+			<div class="ctr fl"></div>
+			<div class="ctr fl active"></div>
+			<div class="ctr fl"></div>
+		</div>
+	</div>
+	
+	<div class="section section2">
+		<div>
+		    <center><img style="margin-top: 80px;" src="images/line.png"></center>
+		  
+			<h3>
+			   全民制鸡，正式开始		
+			</h3>
+		</div>
+		<div class="btn1">
+			立即参加
+		</div>
+	</div>
+	<div class="section section3">
+		<div>
+		    <center><img style="margin-top: 80px;" src="images/line.png"></center>
+		  
+			<h3>
+			   探索机密，立即行动		
+			</h3>
+		</div>
+		<center><img src="images/person.png"></center>
+		<div>
+			<h3  style="color:#999999;">八扒工艺</h3>
+		</div>
+	</div>
+	<div class="section section4">
+		<div>
+		    <center><img style="margin-top: 80px;" src="images/line.png"></center>
+		  	<h3>
+			   吃的是味道&nbsp;&nbsp;更是健康	
+			</h3>
+			<p>我们采用优质的原料&nbsp;精致的制作方法&nbsp;只为让你吃出味道&nbsp;吃出健康</p>
+      		
+		</div>
+			<div class="info2">	
+			 <div class="w w2">
+				<div class="box box1">
+					<div class="info-box"><img src="images/info-1.png">
+					<p>ersgherhtr</p></div>
+							
+				</div>
+				<div class="box box2">
+					<div class="info-box"><img src="images/info-2.jpg">
+					<p>ersgherhtr</p></div>
+					
+				</div>
+				<div class="box box3">
+					<div class="info-box"><img src="images/info-3.jpg">
+					<p>ersgherhtr</p></div>
+					
+				</div>
+				<div class="box box4">
+					<div class="info-box"><img src="images/info-4.jpg">
+					<p>ersgherhtr</p></div>
+				</div>
+				<div class="box5">
+					<div class="san" style="height: 0px;"></div>
+				</div>
+			  </div>
+			</div>
+	</div>
+	<div class="section section5">
+	    <div>
+		    <center><img style="margin-top: 80px;" src="images/line.png"></center>
+		  	<h3>
+			   营养成分
+			</h3>
+			
+      		
+		</div>
+		<div class="w">
+			<div class="nut-info">
+				<div>
+					<div class="ctr50"></div>
+					<p>蛋白质</p>
+				</div>
+				<div>
+					<div class="ctr50"></div>
+					<p>胆固醇</p>
+				</div>
+				<div>
+					<div class="ctr50"></div>
+					<p>钙</p>
+				</div>
+				<div>
+					<div class="ctr50"></div>
+					<p>脂肪</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="bottom">
+		<p>德州永盛斋扒鸡有限公司</p>
+	</div>
+	<div id="back-up" onclick="GoTop()">
+		<img src="./images/arr.png" style="margin-left:11px;height: 90px;width: 8px;">
+		<p style="color: #000;text-align: center;">返回顶部</p>
+	</div>
+</body>
+<!-- <script type="text/javascript" src="js/fullpagescroll.js"></script>  -->
+ <script type="text/javascript">
+
+ 	$(".ctr").click(function() {
+ 		$index=$(this).index();/*获得元素的位置;*/
+ 		 if($index==0){
+ 	    	$(".slide1").css("left","0");
+ 	    	$(".slide2").css("left","100%");
+ 	    	$(".slide3").css("left","200%");
+ 	    }
+ 	    else if($index==1){
+ 	    	$(".slide1").css("left","-100%");
+ 	    	$(".slide2").css("left","0");
+ 	    	$(".slide3").css("left","100%");
+ 	    }else{
+ 	    	$(".slide1").css("left","-200%");
+ 	    	$(".slide2").css("left","-100%");
+ 	    	$(".slide3").css("left","0");
+ 	    }  /* 设置图片位置*/
+		$(".ctr").removeClass("active");
+ 		$(this).addClass("active");}); /*设置active的样式*/
+ 	/*现在是导航的UI效果 */ 
+  var time=null;  
+	$(window).scroll(function(){
+		var tp = $(window).scrollTop();
+
+		if(tp == 0){
+			$('.topBar').css({'opacity':'1','background':'transparent'});
+			$("#back-up").css("display","none");
+		}
+		else{
+			$('.topBar').css({'opacity':'0.8','background':'#DDD'});
+			$("#back-up").css("display","block");
+		}
+		var x=$(".section5").offset().top;
+        var y=$(document).scrollTop();
+       if(x<=y){
+			time=setInterval("myInterval()",200);//1000为1秒钟
+			if (y-x>=400){
+				clearInterval(time);
+			}
+        }
+		
+	})
+   /*这是nage盒子的特效*/
+  $(".box").mouseenter(function(){
+       $index2=$(this).index();
+       switch($index2){
+           case 0:
+           $(".box5").css("left","24.5%");
+           $(".san").css({"right":"","left":"-30px","border-right":"30px solid #abd4b4","border-left":""});
+           break;
+           case 1:
+           $(".box5").css("left","49.5%");
+           $(".san").css({"right":"","left":"-30px","border-right":"30px solid #abd4b4","border-left":""});
+           break;
+           case 2:
+           $(".box5").css("left","74.5%");
+            $(".san").css({"right":"","left":"-30px","border-right":"30px solid #abd4b4","border-left":""});
+           break;
+           case 3:
+           $(".box5").css("left","49.5%");
+             $(".san").css({"right":"","left":"","right":"-30px","border-left":"30px solid #abd4b4","border-right":""});
+           break;
+       } 
+       $(".box5").css("display","block");
+    });
+ $(".w2").mouseleave(function(){
+     $(".box5").css("display","none");
+  });
+  var j=0,k=0,l=0,m=0;
+function myInterval(){
+	  		j++;
+	  		k++;
+	  		l++;
+	  		m++;
+            if (j<=32) {
+               $(".ctr50").eq(0).html(j+"%"); 
+            }
+            if (k<=46) {
+               $(".ctr50").eq(1).html(k+"%"); 
+            }
+            if (l<=13) {
+               $(".ctr50").eq(2).html(l+"%"); 
+               delete l;
+            }
+            if (m<=33) {
+               $(".ctr50").eq(3).html(m+"%"); 
+            }
+            if(j>=32&&k>=46&&l>=13&&m>=33){
+            	clearInterval(time);
+            }
+            	
+            	
+            	
+          
+		}
+
+ </script>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>品牌打造</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/common.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/chanping.css"> -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script type="text/javascript" src="js/up.js"></script>
+</head>
+<style type="text/css">
+    *{
+    	font-family: 微软雅黑;
+    	
+    }
+    .w2{
+	width: 1300px;
+	margin: 0 auto;
+	position: relative;
+	margin-top:70px;
+   }
+    .w2 img{
+    	margin: 0 auto;
+    	width: 1300px;
+    }
+    .c-box a:hover{
+    	color:  #FFD100;
+    }
+    .c-box a:visited{
+    	color:  #FFD100;
+    }
+	.section1{
+		background: url(./images/pinpai/bg.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		
+	}
+	#p1,#p2{
+		display: none;
+	}
+	.section2{
+		height: 90px;
+		background: #fff;
+		width: 100%;
+		border-bottom: 1px solid #808080;
+	}
+
+	ul>li{
+		display: block;
+		width: 160px;
+		height: 90px;
+		float: right;
+		line-height: 90px;
+		text-align: center;
+	}
+	li>a{color: #000;font-size: 20px;text-decoration: none;padding-bottom: 30px;}
+    li>a:hover{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    li>a:active{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    .active{
+    	background: #FFD100;
+    	height: 90px;
+    	width: 200px;
+    	float: right;
+    	margin-right:50px; 
+    	font-size: 24px;
+    	line-height: 90px;
+    	text-align: center;
+    	margin-left: 0px;
+    }
+    .active a{
+    	color: #fff;
+    }
+    .active a:hover{
+    	text-decoration: none;
+    }
+    .section3{
+    	height: 100%;
+      width: 100%;
+      background:url(./images/pinpai/bg2.jpg);
+      background-size: 100% 100%;
+    }
+   .info1{
+    width: 400PX;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    background: #fff;
+    font-size: 18px;
+    padding: 40px 20px 40px 20px;
+   }
+   .section4{
+    margin-top: 60px;
+   }
+   .info{
+  width: 30%;
+  margin-left: 3%;
+  height: 300px;
+  
+  padding-top: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.info:nth-child(1){
+   background:url(./images/guanyu2/info-1.jpg);
+   background-repeat: no-repeat;
+   background-position: 20px -10px;
+}
+.info:nth-child(2){
+   background:url(./images/guanyu2/info-2.jpg);
+   background-repeat: no-repeat;
+   background-position: 20px -20px;
+}
+.info:nth-child(3){
+   background:url(./images/guanyu2/info-3.jpg);
+   background-repeat: no-repeat;
+   background-position: 20px -1px;
+}
+.info h4{
+  color: #808080;
+    font-weight: bold;
+}
+.info p{
+  font-size: 16px;
+}
+.section5{
+      height: 100%;
+      width: 100%;
+      background:url(./images/pinpai/bg3.jpg);
+      background-size: 100% 100%;
+    }
+.section5 p{
+      text-align: center;
+      font-size: 18px;
+      line-height: 50px;
+    } 
+.section5 p:nth-child(3){
+      margin-top: 30px;
+    }   
+.title-info{
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    width: 520px;
+    height: 370px;
+    border: 1px solid #808080;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+   }
+   .title-info-m{
+    border: 4px solid #FFD100;
+    height: 100%;
+    font-size: 22px;
+    line-height: 56px;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 20px; 
+   } 
+   .section7{
+    background:#f1f1f1;
+    padding-bottom: 30px;
+   }
+   .section8{
+    height: 100%;
+      width: 100%;
+      background:url(./images/pinpai/peison.jpg);
+      background-size: 100% 100%;
+      margin-top: 50px;
+   }
+   .fieldset{
+    width: 509px;height:263px;margin: 0 auto;
+    background: url(./images/pinpai/kuang.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+   }
+   .fieldset-t{
+     position: absolute;
+     left: 3px;
+     top: -16px;
+   }
+    .fieldset-m{
+     position: absolute;
+     left: 0px;
+     top: 10px;
+     padding: 30px 20px 10px 20px;
+     font-size: 18px;
+     line-height: 40px;
+   }
+</style>
+<body>
+	<div class="topBar">
+	  <div id="main">
+		<div class="topBar-left fl">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li><a href="关于我们（2）.html">百年传承</a></li>
+			</ul>
+		</div>
+		<div class="topBar-center fl">
+			<div style="border: 1px solid #fff;width: 80px;height: 80px;margin: 20px auto;"></div>
+		</div>
+		<div class="topBar-right fl">
+			<ul>
+				<li><a href="品牌打造.html">品牌打造</a></li>
+        <li><a href="产品中心.html">产品中心</a></li>
+        <li><a href="加入我们.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div style="clear: both"></div>
+	  </div>
+	</div>
+	<div class="section section1">
+  		<div class="slide slide2">
+		  	<div class="w">
+		  	  <div style="margin-top:250px;line-height: 100px;">
+		  	     <p id="p1" style="font-size: 56px;">高标准质控下生产</p>	
+		  	     <p id="p2" style="font-size: 48px;">&nbsp;&nbsp;&nbsp;安全健康的绿色食品</p>
+		  	  </div>
+		  	</div>
+		</div>
+	</div>
+	<div class="section2">
+		<img src="images/chanpin/nav.png" style="height:90px;">
+		<div class="active"><a href="#">返回首页</a></div>
+		<ul style="display: block;float: right;">
+			<li><a href="#">冷链配送</a></li>
+			<li><a href="#">科研中心</a></li>
+			<li><a href="#">品质安全</a></li>
+			<li><a href="#">生态放养</a></li>
+		</ul>
+	</div>
+	<div class="section3">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;color: #000;">
+			  好扒鸡从“养鸡”开始 ———————— 散养鸡
+			  </h2>
+        <p style="font-size:24px;text-align:center;color: #000;line-height: 90px;">我们的扒鸡来自散养一年的成年鸡</p>
+    </div>
+    <div class="w2" style="color: #000;min-height: 450px;position: relative;">
+      	<div class="info1"><span style="color:#FFD100;font-size: 1.5em">我</span>&nbsp;们始终坚信“好的扒鸡从养鸡开始”的经营理念，不仅拥有自己的有机养殖基地，同时建立了大型的鸡孵化场，购置了先进的自动化养殖基地，从而保证每只鸡都有优质的鸡蛋，在此基础上采用了生态放羊式的管理方法，为他们制作一个良好的生长环境，从而培养高质量的散养鸡。</div>  	
+		</div>
+	</div>
+  <div class="section4">
+    <div>
+        <h2 style="text-align: center;color: #000;">
+        散养鸡和笼养鸡的区别在哪里？
+        </h2>
+    </div>
+    <div class="w2" style="color: #000;height: 350px;position: relative;">
+        <div class="info fl">
+              <h4>生命周期</h4><br>
+              <p>散养鸡为放养，活动量大，生命周期较长，体重轻。笼养鸡一般是大批量标准化的生产养殖，活动量小，生命周期短，鸡体较重。</p>
+            </div>
+            <div class="info fl">
+                <h4>肉质</h4><br>
+                <p>散养鸡为放养，活动量大，生命周期较长，体重轻。笼养鸡一般是大批量标准化的生产养殖，活动量小，生命周期短，鸡体较重。</p>
+            </div>
+            <div class="info fl">
+                <h4>骨头</h4><br>
+                <p>散养鸡为放养，活动量大，生命周期较长，体重轻。笼养鸡一般是大批量标准化的生产养殖，活动量小，生命周期短，鸡体较重。</p>
+            </div>  
+    </div>
+  </div>  
+   <div class="section5">
+    <div>
+         <center><img style="margin-top: 70px;" src="images/line.png"></center>
+    </div>
+    <div class="w2" style="color: #000;min-height: 450px;position: relative;padding-top: 50px;">
+       <center><img style="margin-top:-20px;width: 120px;height: 120px;" src="./images/pinpai/shiguan.png"></center>
+       <h3>科学检测，安全生产</h3>
+       <p>为了您的健康我们从不放过任何一个细节，从研发到测试再到生产确保各项指</p>
+       <p>标高于标准水平，只为你吃出健康，吃出美味。</p>
+    </div>
+  </div> 
+  <div class="section6">
+    <div class="w2" style="color: #000;min-height: 400px;position: relative;padding-top: 50px;">
+       <div class="col-md-6" style="border-right:1px solid #f1f1f1;height: 250px;">
+        
+        
+          <div class="fieldset">
+            <div class="fieldset-t"><h4>科学检测，保证质量</h4></div>
+            <div class="fieldset-m">
+              产品质量是企业基业长青的基石，为保证产品质量，“永盛斋”引进先进的质量检测设备及具有丰富实战经验的食品检测专家，严格把控加工过程中的每一个关键质控点，确保市场的每一只扒鸡都符合检测标准。管理体系。    
+            </div>
+          </div>
+
+       </div>
+       <div class="col-md-6">
+          <div class="fieldset">
+            <div class="fieldset-t"><h4>安全生产，精益求精</h4></div>
+            <div class="fieldset-m">
+              永盛斋全体员工团结奋进，不懈努力，始终坚持“质量第一，安全生产”，遵循扒鸡艺人世代相传的经营组训：“毫毫克克的配料一厘不少，分分秒秒的焖煮一分不差”。从鸡源到成品层层把关，不断调整产品结构，大力开发新产品，并通过了ISO22000食品安全.  
+            </div>
+          </div>
+         
+       </div> 
+    </div>
+  </div>  
+  <div class="section7">
+    <div>
+        <center><img style="margin-top: 70px;" src="images/line.png"></center>
+        <h2 style="text-align: center;color: #000;">
+         科技就是力量，让我们永远走在时代的前沿
+      </h2>
+        </div>
+        <div class="w2" style="color: #000;min-height: 450px;">
+            <div class="title-info">
+              <div class="title-info-m">
+                 <span style="color: #FFD100;font-size: 1.2em;">公</span>司在继承传统工艺基础上，不断突破创新，研发新产品。引进了目前食品行业先进的气调保鲜技术，采用保护性混合气体置换包装中空气，利用气体的不同作用，抑制微生物的生长繁殖，达到食品保鲜盒延长保质期的效果。
+              </div>
+            </div>
+         <img src="./images/pinpai/tec.jpg">
+    </div>
+  </div>
+   <div>
+         <center><img style="margin-top: 70px;" src="images/line.png"></center>
+         <h2 style="text-align: center;color: #000;">
+         最后一公里 ———————— 新鲜速达
+      </h2>
+    </div>
+    <div class="section8">
+    
+    <div class="w2" style="color: #000;min-height: 450px;position: relative;padding-top: 50px;">
+       
+    </div>
+  </div>   
+   <div class="section9">
+    
+    <div class="w2" style="color: #000;min-height: 450px;position: relative;margin-top: 0;">
+       <img style="width: 482px;height: 398px;position: absolute;top: -50px;left: 50px;" src="./images/pinpai/ji_03.png"> 
+       <div style="width: 500px;height: 318px;position: absolute;right:160px;top:30px;font-size:22px;padding-top: 50px;">
+         保险肉产品的关键在于冷凝配送能力，最后一公里竞争是核心。为将新鲜美味的扒鸡第一时间送达客户手中，永盛斋集团投入了大量资金，采用先进的“直流移动制冷技术”，零排放，无污染。箱体采用聚氨酯挤塑板保温层，精美而平整干净卫生的解决了鲜扒鸡派送最后一公里的难题。
+       </div>
+    </div>
+  </div>  
+  <div id="back-up" onclick="GoTop()">
+    <img src="./images/arr.png" style="margin-left:11px;height: 90px;width: 8px;">
+    <p style="color: #000;text-align: center;">返回顶部</p>
+  </div>  
+	<div class="bottom">
+		<p>德州永盛斋扒鸡有限公司</p>
+	</div>
+	
+
+</body>
+<!-- <script type="text/javascript" src="js/fullpagescroll.js"></script>  -->
+<script type="text/javascript">
+
+ 	/*现在是导航的UI效果 */ 
+   $(window).scroll(function(){
+		var tp = $(window).scrollTop();
+		if(tp == 0){
+      $('.topBar').css({'opacity':'1','background':'transparent'});
+      $("#back-up").css("display","none");
+    }else{
+      $('.topBar').css({'opacity':'0.8','background':'#DDD'});
+      $("#back-up").css("display","block");
+    }
+	});
+  /* 开场动画效果*/
+
+	$("#p1").add("#p2").slideDown(1500);
+
+   
+ </script> 
+
+</html>	

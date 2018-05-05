@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/common.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/chanping.css"> -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/up.js"></script>
+</head>
+<style type="text/css">
+    *{
+    	font-family: 微软雅黑;
+    	
+    }
+    .w2{
+	width: 1300px;
+	margin: 0 auto;
+	position: relative;
+	margin-top:70px;
+   }
+    .w2 img{
+    	margin: 0 auto;
+    	width: 1300px;
+    }
+    .c-box a:hover{
+    	color:  #FFD100;
+    }
+    .c-box a:visited{
+    	color:  #FFD100;
+    }
+	.section1{
+		background: url(./images/guanyu2/bg.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		
+	}
+	#p1,#p2{
+		display: none;
+	}
+	.section2{
+		height: 90px;
+		background: #fff;
+		width: 100%;
+		border-bottom: 1px solid #808080;
+	}
+
+	ul>li{
+		display: block;
+		width: 160px;
+		height: 90px;
+		float: right;
+		line-height: 90px;
+		text-align: center;
+	}
+	li>a{color: #000;font-size: 20px;text-decoration: none;padding-bottom: 30px;}
+    li>a:hover{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    li>a:active{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    .active{
+    	background: #FFD100;
+    	height: 90px;
+    	width: 200px;
+    	float: right;
+    	margin-right:50px; 
+    	font-size: 24px;
+    	line-height: 90px;
+    	text-align: center;
+    	margin-left: 0px;
+    }
+    .active a{
+    	color: #fff;
+    }
+    .active a:hover{
+    	text-decoration: none;
+    }
+   .section3{
+   	height: auto;
+   	color: #000;
+   	background: #f1f1f1;
+   	padding-bottom: 40px;
+   }
+   .title-info{
+   	position: absolute;
+   	bottom: 120px;
+   	left: 30px;
+   	width: 640px;
+   	height: 470px;
+   	border: 1px solid #808080;
+   	background: #fff;
+   	padding: 10px 10px 10px 10px;
+   }
+   .title-info-m{
+   	border: 4px solid #FFD100;
+   	height: 100%;
+   	font-size: 26px;
+   	line-height: 56px;
+   	padding-left:20px;
+   	padding-right: 20px;
+   	padding-top: 20px; 
+   }
+.info{
+	width: 30%;
+	margin-left: 3%;
+	height: 300px;
+	
+ 	padding-top: 70px;
+ 	padding-left: 25px;
+ 	padding-right: 25px;
+}
+.info:nth-child(1){
+   background:url(./images/guanyu2/info-1.jpg);
+   background-repeat: no-repeat;
+   background-position: 20px -10px;
+}
+.info:nth-child(2){
+   background:url(./images/guanyu2/info-2.jpg);
+   background-repeat: no-repeat;
+   background-position: 20px -20px;
+}
+.info:nth-child(3){
+   background:url(./images/guanyu2/info-3.jpg);
+   background-repeat: no-repeat;
+   background-position: 20px -1px;
+}
+.info h4{
+	color: #808080;
+    font-weight: bold;
+}
+.info p{
+	font-size: 16px;
+}
+.box{
+	width: 100%;
+	height: 400px;
+	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.box img{
+	width:479px;
+	height: 409px;
+	
+}
+.kuang{
+	border: 2px solid #FFD100;
+	height: 300px;
+	width: 600px;
+	top: 30px;	
+	position: absolute;
+	top: 50px;
+	/*right: 120px;*/
+	right: 0px;
+	font-size: 22px;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+	padding-right: 40px;
+	z-index: 2;
+	transition: all 1s;
+}
+.kuang2{
+	border: 2px solid #FFD100;
+	height: 300px;
+	width: 600px;
+	top: 80px;	
+	position: absolute;
+	/*left: 130px;*/
+	left: 0px;
+	font-size: 22px;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+	padding-right: 40px;
+	z-index: 2;
+	transition: all 1s;
+}
+.pic{
+	
+	height: 400px;
+	width: 300px;
+	position: absolute;
+	/*left: 130px;*/
+	left:0px;
+	transition: all 1s;
+
+}
+.pic2{
+	height: 400px;
+	width: 300px;
+	position: absolute;
+	/*right: 300px;*/
+	right:180px;
+	transition: all 1s;
+}
+.btn{
+	background:url(./images/guanyu2/kuang.png);
+	width: 220px;
+	height: 70px;
+	background-repeat: no-repeat;
+	line-height: 60px;
+	padding-left: 60px;
+	font-size: 18px;
+	margin-left:560px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.qywh{
+	height: 300px;
+	width: 700px;
+	margin:0px auto;
+    font-size: 28px;
+    opacity: 0.9;
+}
+</style>
+<body>
+	<div class="topBar">
+	  <div id="main">
+		<div class="topBar-left fl">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="关于我们（2）.html">百年传承</a></li>
+			</ul>
+		</div>
+		<div class="topBar-center fl">
+			<div style="border: 1px solid #fff;width: 80px;height: 80px;margin: 20px auto;"></div>
+		</div>
+		<div class="topBar-right fl">
+			<ul>
+				<li><a href="品牌打造.html">品牌打造</a></li>
+				<li><a href="产品中心.html">产品中心</a></li>
+				<li><a href="加入我们.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div style="clear: both"></div>
+	  </div>
+	</div>
+	<div class="section section1">
+  		<div class="slide slide2">
+		  	<div class="w">
+		  	  <div style="margin-top:250px;line-height: 100px;">
+		  	     <p id="p1" style="font-size: 56px;">永承八扒工艺&nbsp;&nbsp;盛世誉满德州</p>	
+		  	     <p id="p2" style="font-size: 48px;">&nbsp;&nbsp;&nbsp;德州"永盛斋"扒鸡集团</p>
+		  	  </div>
+		  	</div>
+		</div>
+	</div>
+	<div class="section2">
+		<img src="images/chanpin/nav.png" style="height:90px;">
+		<div class="active"><a href="#">返回首页</a></div>
+		<ul style="display: block;float: right;">
+			<li><a href="#">企业文化</a></li>
+			<li><a href="#">发展历史</a></li>
+			<li><a href="#">企业简介</a></li>
+		</ul>
+	</div>
+	<div class="section3">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;">
+			   八扒长“技”&nbsp&nbsp一心一意
+			</h2>
+      	</div>
+      	<div class="w2" style="color: #000;min-height: 450px;">
+      	  	<div class="title-info">
+      	  		<div class="title-info-m">
+      	  		   <span style="color: #FFD100;font-size: 1.2em;">德</span>州永盛斋扒鸡集团是一家以“永盛斋”牌扒鸡系列产品为支撑的中华老字号店，遵循扒鸡艺人世代相传制作工艺：“毫毫克克的配料一厘不少，分分秒秒的们焖煮一分不差。”运用现代化的科学技术，将具有三百年历史名族文化特色的永盛斋“德州五香拓谷扒鸡”传承发展，倍受广大消费者欢迎。
+      	  		</div>
+      	  	</div>
+		  	<img src="./images/guanyu2/title.jpg">
+		</div>
+	</div>
+	<div class="section4">
+		<div>
+		  	<h2 style="text-align: center;color:#000;">
+			   时代发展，我们与时俱进&nbsp;从不懈怠
+			</h2>
+		</div>
+      	<div class="w2" style="color: #000;min-height:330px;">
+      	  	<div class="info fl">
+            	<h4>经营范围</h4><br>
+            	<p>我们是一家规模大，实力强的综合性公司，以五香脱骨扒鸡及系列肉制品为主，涉及饲养宰杀，肉禽加工，餐饮服务、茶业经营，家具，房产等。</p>
+      	  	</div>
+      	  	<div class="info fl">
+                <h4>荣誉称号</h4><br>
+                <p>我们是一家规模大，实力强的综合性公司，以五香脱骨扒鸡及系列肉制品为主，涉及饲养宰杀，肉禽加工，餐饮服务、茶业经营，家具，房产等。</p>
+      	  	</div>
+      	  	<div class="info fl">
+                <h4>销售成果</h4><br>
+                <p>我们是一家规模大，实力强的综合性公司，以五香脱骨扒鸡及系列肉制品为主，涉及饲养宰杀，肉禽加工，餐饮服务、茶业经营，家具，房产等。</p>
+      	  	</div>	
+		</div>
+	</div>
+	<div class="section5">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+      	</div>
+      	<div class="w2" style="color: #000;min-height:720px;">
+      	  	<img src="./images/guanyu2/chuancheng.jpg">
+		</div>
+	</div>
+	<div class="section6">	
+      	<div class="w2" style="color:#000;min-height:690px;margin-top: 0px;	">
+      	  	<div class="box">
+      	  		<div class="kuang">
+      	  			解放前&nbsp;三人作坊<br>
+      	  			<p>刘永海先生在车站经营手工坊永盛斋扒鸡店，店铺从一家发展到几十家，永盛斋店铺在几十家店铺中独树一帜。</p>
+      	  		</div>
+      	  		<div class="pic">
+      	  			<img src="./images/guanyu2/1.png">
+      	  		</div>
+      	  	</div>
+      	  	<div class="box">
+      	  		<div class="kuang2">
+      	  			解放前&nbsp;三人作坊<br>
+      	  			<p>刘永海先生在车站经营手工坊永盛斋扒鸡店，店铺从一家发展到几十家，永盛斋店铺在几十家店铺中独树一帜。</p>
+      	  		</div>
+      	  		<div class="pic2">
+      	  			<img src="./images/guanyu2/2.png">
+      	  		</div>
+      	  	</div>
+      	  	<div class="box">
+      	  		<div class="kuang">
+      	  			解放前&nbsp;三人作坊<br>
+      	  			<p>刘永海先生在车站经营手工坊永盛斋扒鸡店，店铺从一家发展到几十家，永盛斋店铺在几十家店铺中独树一帜。</p>
+      	  		</div>
+      	  		<div class="pic">
+      	  			<img src="./images/guanyu2/3.png">
+      	  		</div>
+      	  	</div>
+      	  	<div class="box">
+      	  		<div class="kuang2">
+      	  			解放前&nbsp;三人作坊<br>
+      	  			<p>刘永海先生在车站经营手工坊永盛斋扒鸡店，店铺从一家发展到几十家，永盛斋店铺在几十家店铺中独树一帜。</p>
+      	  		</div>
+      	  		<div class="pic2">
+      	  			<img src="./images/guanyu2/4.png">
+      	  		</div>
+      	  	</div>
+      	  	<div class="btn">了解更多</div>
+  		</div>
+	</div>
+	<div class="section7">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;color: #000;">
+			   我们诚信经营&nbsp&nbsp以人为本
+			</h2>
+      	</div>
+      	<div class="w2" style="color: #000;height:700px;width: 1300px;background:url(./images/guanyu2/bg2.jpg);background-repeat: no-repeat;background-size: 100% 100%;margin-bottom: 0px;color: #fff;padding-top: 300px;">
+      	   <div class="qywh">
+      	  	永盛斋一直秉承着信守合同，持续经营；以质为先，服务客户；以客为尊，诚实守信；以诚待人，以信立业的文化理念，以诚为本，一心一意服务于每一个需要的人，在同行中树立良好的威信，深受消费者的信赖和支持。
+      	   </div>
+		</div>
+	</div>
+	<div id="back-up" onclick="GoTop()">
+		<img src="./images/arr.png" style="margin-left:11px;height: 90px;width: 8px;">
+		<p style="color: #000;text-align: center;">返回顶部</p>
+	</div>
+	<div class="bottom">
+		<p>德州永盛斋扒鸡有限公司</p>
+	</div>
+	
+
+</body>
+<!-- <script type="text/javascript" src="js/fullpagescroll.js"></script>  -->
+<script type="text/javascript">
+ 	/*现在是导航的UI效果 */ 
+   $(window).scroll(function(){
+		var tp = $(window).scrollTop();
+		var tp2=$(".section6").offset().top;
+		if(tp == 0){
+			$('.topBar').css({'opacity':'1','background':'transparent'});
+			$("#back-up").css("display","none");
+		}else{
+			$('.topBar').css({'opacity':'0.8','background':'#DDD'});
+			$("#back-up").css("display","block");
+		}
+		if (tp2-tp<=200){
+			$('.kuang').css("right","120px");
+		    $('.pic').css("left","130px");
+		    $('.kuang2').css("left","130px");
+		    $('.pic2').css("right","300px");
+		}
+
+	});
+  /* 开场动画效果*/
+
+	$("#p1").add("#p2").slideDown(1500);
+ </script> 
+
+</html>	

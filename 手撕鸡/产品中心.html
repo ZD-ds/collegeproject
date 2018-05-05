@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>产品中心</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/common.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/chanping.css"> -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/up.js"></script>
+</head>
+<style type="text/css">
+    *{
+    	font-family: 微软雅黑;
+    }
+    .c-box a:hover{
+    	color:  #FFD100;
+    }
+    .c-box a:visited{
+    	color:  #FFD100;
+    }
+	.section1{
+		background: url(./images/chanpin/banner.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		
+	}
+	#p1,#p2{
+		display: none;
+	}
+	.section2{
+		height: 90px;
+		background: #fff;
+		width: 100%;
+		border-bottom: 1px solid #808080;
+	}
+
+	ul>li{
+		display: block;
+		width: 160px;
+		height: 90px;
+		float: right;
+		line-height: 90px;
+		text-align: center;
+	}
+	li>a{color: #000;font-size: 20px;text-decoration: none;padding-bottom: 30px;}
+    li>a:hover{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    li>a:active{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    .active{
+    	background: #ffd100;
+    	height: 90px;
+    	width: 200px;
+    	float: right;
+    	margin-right:50px; 
+    	font-size: 24px;
+    	line-height: 90px;
+    	text-align: center;
+    	margin-left: 0px;
+    }
+    .active a{
+    	color: #fff;
+    }
+    .active a:hover{
+    	text-decoration: none;
+    }
+   .section3{
+   	height: auto;
+   	color: #000;
+   	margin-bottom: 30px;
+   }
+   .m1{
+   	margin-left: 2px;
+   	margin-top: 4px;
+   }
+   #mask{
+  		width: 300px;
+  		height:217px;
+  		position: absolute;
+  		background: #FFD100;
+  		opacity:0.9;
+  		display: none;
+  		top: 0px;
+  		left: 0px;
+  		transition: all 0.3s;
+   }
+   #mask p{
+   		text-align: center;
+   		font-size: 20px;
+   }
+   #mask h1{
+   		text-align: center;
+   		font-size: 28px;
+   		margin-bottom: 20px;
+   }
+   .mask-btn{
+       display: inline-block;
+       background: #fff; 
+       width: 40px;
+       height: 40px; 
+       color: #FFD100;
+       line-height: 40px;
+       border-radius: 20px;
+       text-align: center;
+       margin-top: 10px;
+}
+#cover{
+	background:#808080;
+	opacity: 0.9;
+	position: fixed;
+	background-size: 100% 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	height: 100%;
+	width: 100%;
+	 display: none;}
+.mag{
+	z-index: 101;
+   width: 800px;
+   height:500px;
+   margin:60px auto;
+   background: #fff;
+   position: relative;
+}
+
+.mag span{
+   position: absolute;
+   top: 0px;
+   width: 40px;
+   height: 40px;
+   right: -20px;
+   color: #000;
+   font-size: 20px;
+   cursor: pointer;
+}
+.mag span:hover{
+   position: absolute;
+   top: 0px;
+   width: 50px;
+   height: 50px;
+   right: -25px;
+   color: #DDD;
+   font-size: 30px;
+   cursor: pointer;
+}
+.mag img{
+	width: 780px;
+    height: 480px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+</style>
+<body>
+	<div class="topBar">
+	  <div id="main">
+		<div class="topBar-left fl">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="关于我们（2）.html">百年传承</a></li>
+			</ul>
+		</div>
+		<div class="topBar-center fl">
+			<div style="border: 1px solid #fff;width: 80px;height: 80px;margin: 20px auto;"></div>
+		</div>
+		<div class="topBar-right fl">
+			<ul>
+				<li><a href="品牌打造.html">品牌打造</a></li>
+				<li><a href="产品中心.html">产品中心</a></li>
+				<li><a href="加入我们.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div style="clear: both"></div>
+	  </div>
+	</div>
+	<div class="section section1">
+  		<div class="slide slide2">
+		  	<div class="w">
+		  	  <div style="margin-top:250px;line-height: 100px;">
+		  	     <p id="p1" style="font-size: 56px;">随时随地&nbsp;&nbsp;美味享不停</p>	
+		  	     <p id="p2" style="font-size: 48px;">&nbsp;&nbsp;&nbsp;&nbsp;德州"永盛斋"扒鸡</p>
+		  	  </div>
+		  	</div>
+		</div>
+	</div>
+	<div class="section2">
+		<img src="images/chanpin/nav.png" style="height:90px;">
+		<div class="active"><a href="#">返回首页</a></div>
+		<ul style="display: block;float: right;">
+			<li><a href="#">礼盒佳品</a></li>
+			<li><a href="#">袋袋畅销</a></li>
+			<li><a href="#">气调保鲜</a></li>
+			<li><a href="#">休闲食品</a></li>
+		</ul>
+	</div>
+	<div class="section3">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h3 style="text-align: center;">
+			   吃的是味道&nbsp;&nbsp;更是健康	
+			</h3>
+			<p style="text-align: center;">我们采用优质的原料&nbsp;精致的制作方法&nbsp;只为让你吃出味道&nbsp;吃出健康</p>
+      	</div>
+      	<div class="w c-box" style="color: #fff;">
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c1.jpg"></div>
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c2.jpg"></div>
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c3.jpg"></div>
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c4.jpg"></div>
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c5.jpg"></div>
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c6.jpg"></div>
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c7.jpg"></div>
+		  	  <div class="fl m1 c-info"><img src="images/chanpin/c8.jpg"></div>
+		  	  <div id="mask">
+		  	  	<h1>山东特产</h1>
+		  	  	<p>德州永盛斋</p>
+		  	  	<p>大山散养鸡</p>
+		  	  	<p>
+		  	  		<a class="mask-btn" href="#"><span class="fa fa-link"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  	  		<a class="mask-btn" href="javascript:void('0')"><span class="fa fa-arrows"></span></a>
+		  	  	</p>
+		  	  </div>
+		  	  <div style="clear: both"></div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+	<div id="back-up" onclick="GoTop()">
+		<img src="./images/arr.png" style="margin-left:11px;height: 90px;width: 8px;">
+		<p style="color: #000;text-align: center;">返回顶部</p>
+	</div>
+	<div class="bottom">
+		<p>德州永盛斋扒鸡有限公司</p>
+	</div>
+	<div id="cover">
+		<div class="mag">
+		    <span class="fa fa-times"></span>
+			<img src="">
+		</div>
+	</div> -->
+
+</body>
+<!-- <script type="text/javascript" src="js/fullpagescroll.js"></script>  -->
+<script type="text/javascript">
+ 	/*现在是导航的UI效果 */ 
+   $(window).scroll(function(){
+		var tp = $(window).scrollTop();
+		if(tp == 0){
+			$('.topBar').css({'opacity':'1','background':'transparent'});
+			$("#back-up").css("display","none");
+		}else{
+			$('.topBar').css({'opacity':'0.8','background':'#DDD'});
+			$("#back-up").css("display","block");
+		}
+	});
+  /* 开场动画效果*/
+	$("#p1").add("#p2").slideDown(1500);
+  /*现在写鼠标滑动动态*/
+ $(".c-info").mouseenter(function(){
+ 	 $index2=$(this).index();
+
+ 	 display($index2);
+ });
+ function display(index){
+ 	 var y=parseInt(index/4);
+ 	 var x=index%4;
+     $("#mask").css({"top":y*214+"px","left":x*300+"px","display":"block"});
+   $(".mask-btn").eq(1).click(function(e){
+   	 /*是滚动失效*/
+   	   $(window).bind("wheel",function(event){
+         event.preventDefault();
+          return false;
+          });
+   	   $("#cover").css("display","block");
+   	   $a=index+1;
+   	   $(".mag img").attr("src","images/chanpin/c"+$a+".jpg");
+       e.stopPropagation();
+       $(".mag span").click(function(){
+            $("#cover").css("display","none"); 
+               e.stopPropagation();  
+        /*是滚动生效*/
+   	   $(window).unbind("wheel");      	
+       });
+   });
+ }
+ $(".c-box").mouseleave(function(){
+    $("#mask").css("display","none");
+ });
+ </script> 
+
+</html>

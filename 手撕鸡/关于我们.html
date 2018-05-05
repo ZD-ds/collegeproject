@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/common.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/chanping.css"> -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script type="text/javascript" src="js/up.js"></script>
+</head>
+<style type="text/css">
+    *{
+    	font-family: 微软雅黑;
+    	
+    }
+    .c-box a:hover{
+    	color:  #FFD100;
+    }
+    .c-box a:visited{
+    	color:  #FFD100;
+    }
+	.section1{
+		background: url(./images/guanyu/banner.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		
+	}
+	#p1,#p2{
+		display: none;
+	}
+	.section2{
+		height: 90px;
+		background: #fff;
+		width: 100%;
+		border-bottom: 1px solid #808080;
+	}
+
+	ul>li{
+		display: block;
+		width: 160px;
+		height: 90px;
+		float: right;
+		line-height: 90px;
+		text-align: center;
+	}
+	li>a{color: #000;font-size: 20px;text-decoration: none;padding-bottom: 30px;}
+    li>a:hover{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    li>a:active{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    .active{
+    	background: #ffd100;
+    	height: 90px;
+    	width: 200px;
+    	float: right;
+    	margin-right:50px; 
+    	font-size: 24px;
+    	line-height: 90px;
+    	text-align: center;
+    	margin-left: 0px;
+    }
+    .active a{
+    	color: #fff;
+    }
+    .active a:hover{
+    	text-decoration: none;
+    }
+   .section3{
+   	height: auto;
+   	color: #000;
+   	background: #f1f1f1;
+   	padding-bottom: 40px;
+   }
+   .w2{
+   	position: absolute;
+   	width:450px;
+   	height: 400px;
+    left: 60px;
+    top: 100px;
+   	font-size: 18px;
+   }
+   .w3{
+   	position: absolute;
+   	width:563px;
+   	right: -30px;
+    top: 20px;
+   	margin-left: 140px;
+   }
+   .w4{
+   	position: absolute;
+   	width:563px;
+   	left: -140px;
+    top: -20px;
+   	margin-left: 140px;
+   }
+    .w5{
+   	position: absolute;
+   	width:450px;
+   	height: 400px;
+    right: 30px;
+    top: 70px;
+   	font-size: 20px;
+   }
+   .section4{
+   	height: auto;
+   	color: #000;
+   }
+   .section5 .w{
+     margin-top:0px;color: #000;min-height:1482px;background: url(./images/guanyu/xian.png);background-repeat: no-repeat;background-size: 1200px 1482px;
+   	height: auto;
+   	color: #000;
+   	position: relative;
+   }
+   .info-title{
+   	width: 210px;
+   	height: 40px;
+   	position: absolute;
+   
+   	font-size: 24px;
+   	line-height: 40px;
+   }
+   .info-title span{
+   	color: #ffd100; 
+   	font-size: 28px;
+   	font-weight: bold;
+   }
+   .t1{
+   	top: 40px;
+   	left: 50px;
+   }
+   .t2{
+   	top: 247px;
+   	left: 946px;
+   }
+   .t3{
+   	top: 440px;
+   	left: 50px;
+   }
+   .t4{
+   	top: 590px;
+   	left: 945px;
+   }
+    .t5{
+   	top: 840px;
+   	left:50px;
+   }
+    .t6{
+   	top: 1030px;
+   	left: 945px;
+   }
+   .info-m{
+   	   position: absolute;
+       width: 432px;
+       height: 305px;
+      
+   }
+   .m1{
+   	top: 90px;
+   	left: 90px;
+   	background: url(./images/guanyu/info-m1.jpg);
+   	background-size: 100% 100%;
+   	background-repeat: no-repeat;
+   }
+   .m2{
+   	height: 290px;
+   	top: 297px;
+   	left: 646px;
+   	background: url(./images/guanyu/info-m2.jpg);
+   	background-size: 100% 100%;
+   	background-repeat: no-repeat;
+   }
+   .m3{
+   	background: url(./images/guanyu/info-m3.jpg);
+   	background-size: 100% 100%;
+   	background-repeat: no-repeat;
+   	top: 490px;
+   	left: 90px;
+   }
+   .m4{
+   	background: url(./images/guanyu/info-m4.jpg);
+   	background-size: 100% 100%;
+   	background-repeat: no-repeat;
+   	top: 640px;
+   	left: 645px;
+   }
+    .m5{
+    background: url(./images/guanyu/info-m5.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   	top: 890px;
+   	left:90px;
+   }
+    .m6{
+    background: url(./images/guanyu/info-m6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   	top: 1080px;
+   	left: 645px;
+   }
+   .btn1{
+	  width: 300px;
+	  height: 70px;
+	  line-height: 70px;
+	  background: url(./images/kuang.png);
+	  margin: 30px auto;
+	  text-align: center;
+	  border: 1px solid #808080;
+  }
+</style>
+<body>
+	<div class="topBar">
+	  <div id="main">
+		<div class="topBar-left fl">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li><a href="关于我们（2）.html">百年传承</a></li>
+			</ul>
+		</div>
+		<div class="topBar-center fl">
+			<div style="border: 1px solid #fff;width: 80px;height: 80px;margin: 20px auto;"></div>
+		</div>
+		<div class="topBar-right fl">
+			<ul>
+				<li><a href="品牌打造.html">品牌打造</a></li>
+        <li><a href="产品中心.html">产品中心</a></li>
+        <li><a href="加入我们.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div style="clear: both"></div>
+	  </div>
+	</div>
+	<div class="section section1">
+  		<div class="slide slide2">
+		  	<div class="w">
+		  	  <div style="margin-top:250px;line-height: 100px;">
+		  	     <p id="p1" style="font-size: 56px;">永承八扒工艺&nbsp;&nbsp;盛世誉满德州</p>	
+		  	     <p id="p2" style="font-size: 48px;">&nbsp;&nbsp;&nbsp;德州"永盛斋"扒鸡集团</p>
+		  	  </div>
+		  	</div>
+		</div>
+	</div>
+	<div class="section2">
+		<img src="images/chanpin/nav.png" style="height:90px;">
+		<div class="active"><a href="#">返回首页</a></div>
+		<ul style="display: block;float: right;">
+			<li><a href="#">扒鸡简介</a></li>
+			<li><a href="#">品牌故事</a></li>
+			<li><a href="#">独特美味</a></li>
+		</ul>
+	</div>
+	<div class="section3">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;">
+			   德州五香脱骨扒鸡 —————————— “天下第一鸡”
+			</h2>
+			
+      	</div>
+      	<div class="w" style="color: #000;min-height: 450px;">
+		  	  <div class="w2 fl">
+		  	  	  <span style="font-size: 2em;color:#ffd100;">扒</span>鸡是山东省的代表菜之一,也是中华传统风味特色名吃，鲁菜经典，以德州五香脱骨扒鸡最富盛名，属中国四大名鸡之首。扒鸡源于明朝，创于清朝传于民国，盛于当今，已有300余年的历史。以制作独特、肉烂脱骨、色鲜味美、肥而不腻等特点著称，被誉为“天下第一鸡”。其制作技艺为国家非物质文化遗产。1919年载入《山东各县乡土调查录》。
+		  	  </div>
+		  	  <div class="w3 fl">
+		  	  	  <img src="./images/guanyu/pj.png">
+		  	  </div>
+		</div>
+	</div>
+	<div class="section4">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;">
+			   感谢时光的沉淀，成就今日的金典
+			</h2>
+			
+      	</div>
+      	<div class="w" style="color: #000;min-height:300px;background: url(./images/guanyu/picture.jpg);background-repeat: no-repeat;background-size: 100% 300px;">
+		  	
+      	<h2 style="text-align: center;color: #fff;line-height: 300px;">
+			   一段美食传奇故事从这里开始
+			</h2>
+		</div>
+	</div>
+	<div class="section5">
+      	<div class="w">
+		    <div class="info-title t1 tr">
+		    	意外之喜&nbsp;&nbsp;<span>01</span>
+		    </div>
+		    <div class="info-title t2 tl">
+		    	<span>02</span>&nbsp;&nbsp;品鸡取名
+		    </div>
+		    <div class="info-title t3 tr">
+		    	销路打开&nbsp;&nbsp;<span>03</span>
+		    </div>
+		    <div class="info-title t4 tl">
+		    	<span>04</span>&nbsp;&nbsp;“神州一奇”
+		    </div>
+		    <div class="info-title t5 tr">
+		    	天下第一鸡&nbsp;&nbsp;<span>05</span>
+		    </div>
+		    <div class="info-title t6 tl">
+		    	<span>06</span>&nbsp;&nbsp;“八扒工艺”
+		    </div>
+		    <div class="info-m m1"></div>
+		    <div class="info-m m2"></div>
+		    <div class="info-m m3"></div>
+		    <div class="info-m m4"></div>
+		    <div class="info-m m5"></div>
+		    <div class="info-m m6"></div>
+		</div>
+	</div>
+	<div class="section6">
+	    <div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;color: #000;">
+			   永承八扒工艺，盛誉载满德州
+			</h2>
+			
+      	</div>
+      	<div class="w">
+		    <img src="images/guanyu/gongyi.jpg">
+		</div>
+	</div>
+	<div class="section7">
+        <div class="w" style="color: #000;min-height: 450px;">
+              <div class="w4">
+		  	  	  <img src="./images/guanyu/bottom.jpg">
+		  	  </div>
+		  	  <div class="w5">
+		  	  	  刘氏后人传承八大绝技，悉心经营。传至1662年（康熙元年），刘氏传人凭借“永承八扒工艺，盛世誉满德州”的祖训，在运河畔创立“永盛斋”扒鸡字号。自此，“永盛斋”坚守祖传八扒工艺，以小坛烹制正宗德州扒鸡，荣膺“中华老字号”，八大绝技传今朝！
+		  	  	  <div class="btn1">
+					立即参加
+				  </div>
+		  	  </div>
+		  	 
+		</div>
+	</div>
+  <div id="back-up" onclick="GoTop()">
+    <img src="./images/arr.png" style="margin-left:11px;height: 90px;width: 8px;">
+    <p style="color: #000;text-align: center;">返回顶部</p>
+  </div>
+	<div class="bottom">
+		<p>德州永盛斋扒鸡有限公司</p>
+	</div>
+	
+
+</body>
+<!-- <script type="text/javascript" src="js/fullpagescroll.js"></script>  -->
+<script type="text/javascript">
+ 	/*现在是导航的UI效果 */ 
+   $(window).scroll(function(){
+		var tp = $(window).scrollTop();
+		if(tp == 0){
+      $('.topBar').css({'opacity':'1','background':'transparent'});
+      $("#back-up").css("display","none");
+    }else{
+      $('.topBar').css({'opacity':'0.8','background':'#DDD'});
+      $("#back-up").css("display","block");
+    }
+	});
+  /* 开场动画效果*/
+	$("#p1").add("#p2").slideDown(1500);
+ </script> 
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>加入我们</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/common.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/chanping.css"> -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/up.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3i1F5GolEy0BzX9CUgDCrqUBvGWut9Kr"></script>
+</head>
+<style type="text/css">
+    *{
+    	font-family: 微软雅黑;
+    	
+    }
+    .w2{
+	width: 1300px;
+	margin: 0 auto;
+	position: relative;
+	margin-top:70px;
+   }
+    .w2 img{
+    	margin: 0 auto;
+    	width: 1300px;
+    }
+    .c-box a:hover{
+    	color:  #FFD100;
+    }
+    .c-box a:visited{
+    	color:  #FFD100;
+    }
+	.section1{
+		background: url(./images/join/bg4.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		
+	}
+	#p1,#p2{
+		display: none;
+	}
+	.section2{
+		height: 90px;
+		background: #fff;
+		width: 100%;
+		border-bottom: 1px solid #808080;
+	}
+
+	ul>li{
+		display: block;
+		width: 160px;
+		height: 90px;
+		float: right;
+		line-height: 90px;
+		text-align: center;
+	}
+	li>a{color: #000;font-size: 20px;text-decoration: none;padding-bottom: 30px;}
+    li>a:hover{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    li>a:active{border-bottom:3px solid #ffd100;color:#000;font-size:20px;text-decoration: none;}
+    .active{
+    	background: #FFD100;
+    	height: 90px;
+    	width: 200px;
+    	float: right;
+    	margin-right:50px; 
+    	font-size: 24px;
+    	line-height: 90px;
+    	text-align: center;
+    	margin-left: 0px;
+    }
+    .active a{
+    	color: #fff;
+    }
+    .active a:hover{
+    	text-decoration: none;
+    }
+    .section3{
+    	background:#F1F1F1;
+    }
+    .box{
+        padding-top:40px;height: 420px;margin-top: 20px;padding-left: 30px;padding-right: 30px;
+    }
+     .box img{
+       height: 90px;
+       width: 90px;
+       margin: 0 auto;
+    }
+      .box p{
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .section5{
+    	background:#F1F1F1;
+    }
+    .info{
+    	 margin-top: 30px;
+    	width: 280px;
+    	height: 480px;
+    	border-right: 1px solid #DDDDDD;
+    	border-bottom: 1px solid #DDDDDD;
+    	border-left: 1px solid #DDDDDD;
+    }
+    
+    .active2{
+    	margin-top: 20px;
+    	width: 360px;
+    	height: 500px;
+    	border-right: 1px solid #ffd101;
+    	border-bottom: 1px solid #ffd101;
+    	border-left:1px solid #ffd101;
+    }
+
+    .info-t{
+    	height: 100px;
+    	background:#dfdfdf;
+    	line-height: 100px;
+    	font-size: 24px;
+    	color: #fff;
+    	text-align: center;
+    }
+   
+    .info-t2{
+    	height: 100px;
+    	background:#eceaeb;
+    	line-height: 100px;
+    	font-size: 24px;
+    	color: #fff;
+    	text-align: center;
+    }
+     .active2>.info-t{
+    	height: 110px;
+    	background:#ffd101;
+    	line-height: 110px;
+    	font-size: 26px;
+    	color: #fff;
+    	text-align: center;
+    }
+    .active2>.info-t2{
+    	height: 110px;
+    	background:#ffd101;
+    	line-height: 110px;
+    	font-size: 26px;
+    	color: #fff;
+    	text-align: center;
+    }
+    .info-m{
+        padding-top:80px;
+        padding-bottom: 80px;
+    }
+    .info-m p{
+        line-height: 60px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #allmap {width: 1200px;height:400px;overflow: hidden;margin:20px auto;font-family:"微软雅黑";}
+    #wrap{
+    	height: 250px;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    }
+    #wrap>div{
+    	height: 220px;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+
+    }
+     #wrap>div:nth-child(2){
+    	border-left:1px solid #bfbfbf; 
+    	height: 190px;
+    	border-right:1px solid #bfbfbf; 
+
+    }
+    .kf{
+    	width: 140px;
+        margin: 0 auto;
+        height: 100px;
+        border-radius: 10px 10px;
+        background:#bfbfbf;
+    }
+    .kf{
+    	width: 140px;
+        margin: 0 auto;
+        height: 100px;
+        border-radius: 10px 10px;
+        background:#bfbfbf;
+    }
+    .kf:nth-child(2){
+    	width: 140px;
+        margin: 20px auto;
+        height: 30px;
+        border-radius: 15px 15px;
+        border:1px solid #bfbfbf;
+         background:#fff;
+         line-height: 30px;
+         padding-left: 20px;
+    }
+    #link img{
+       width: 120px;
+       height: 120px;
+       margin-left:27px;
+        margin-bottom:10px;
+
+    }
+     #link p{
+      text-align: center;
+    }
+    #call{
+    	padding-left:60px;
+    	font-size: 18px;
+    }
+    .active2 h3{
+    	text-align: left;
+    	color:#ffd101;
+    	font-size: 16px; 
+    }
+    .active2 p{
+    	text-align: left;
+    	font-size: 14px;
+    }
+     .active2 .info-m{
+    	padding-top: 4px;
+    }
+    .info .info-m-1{
+    	display:block;
+    }
+    .info .info-m-2{
+    	display:none;
+    }
+    .active2 .info-m-1{
+    	display:none;
+    }
+    .active2 .info-m-2{
+    	display:block;
+    }
+</style>
+<body>
+	<div class="topBar">
+	  <div id="main">
+		<div class="topBar-left fl">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li><a href="关于我们（2）.html">百年传承</a></li>
+			</ul>
+		</div>
+		<div class="topBar-center fl">
+			<div style="border: 1px solid #fff;width: 80px;height: 80px;margin: 20px auto;"></div>
+		</div>
+		<div class="topBar-right fl">
+			<ul>
+				<li><a href="品牌打造.html">品牌打造</a></li>
+        <li><a href="产品中心.html">产品中心</a></li>
+        <li><a href="加入我们.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div style="clear: both"></div>
+	  </div>
+	</div>
+	<div class="section section1">
+  		<div class="slide slide2">
+		  	<div class="w">
+		  	  <div style="margin-top:250px;line-height: 100px;">
+		  	     <p id="p1" style="font-size: 56px;">给自己一个机会</p>	
+		  	     <p id="p2" style="font-size: 48px;">&nbsp;&nbsp;&nbsp;给梦想一个起点</p>
+		  	  </div>
+		  	</div>
+		</div>
+	</div>
+	<div class="section2">
+		<img src="images/chanpin/nav.png" style="height:90px;">
+		<div class="active"><a href="#">返回首页</a></div>
+		<ul style="display: block;float: right;">
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">如何加盟</a></li>
+			<li><a href="#">加盟权益</a></li>
+			<li><a href="#">营销网点</a></li>
+		</ul>
+	</div>
+	<div class="section3">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;color: #000;">
+			   网点遍布&nbsp&nbsp覆盖全国
+			</h2>
+      	</div>
+      	<div class="w2" style="color: #000;min-height: 450px;margin-top:19px;">
+      	  	<div style="width: 900px;font-size:16px;margin: 0 auto;">公司致力于开拓全国销售市场、销售范围遍布全国十八个省、市、自治区、总经销、总代理120多家、营销网点13000多个以确保永盛斋对的产品能在最短的时间内到达所需的客户手里，完善的供货体系，广泛的销售网点，亦是永盛斋强大销售力的保证</div>
+      	  	<img src="./images/join/map.png">
+		</div>
+	</div>
+	<div class="section4">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;color: #000;">
+			   加入我们&nbsp&nbsp更多特权享不停
+			</h2>
+      	</div>
+      	<div class="w2" style="color: #000;min-height: 500px;margin-top:19px;">
+      	  	<div style="text-align:center;width:600px;font-size:16px;margin:0 auto;">为满足广大投资者的需求，我们量身定制了一下各项特权，让您再无后顾之忧。</div>
+      	  	<div class="col-md-4 box">
+      	  	   <center>
+      	  		<img src="./images/join/tubiao.png">
+      	  		<h3>专业培训</h3>
+      	  		<br>
+      	  	   <p>总部将为加盟技术加工人员提供专业的培训，传授最正宗的德州扒鸡加工工艺，加盟店及从业人员可以接受统一的企业文化、市场营销、选址、开业、日常店铺管理等方面的教育培训；</p>
+      	  	</div>
+      	  	<div class="col-md-4 box">
+      	       <center>
+      	  	    <img src="./images/join/tubiao2.png">
+      	  	    <h3>信息共享</h3>
+      	  		</center>
+      	  		<br>
+      	  	   <p>总部将为加盟技术加工人员提供专业的培训，传授最正宗的德州扒鸡加工工艺，加盟店及从业人员可以接受统一的企业文化、市场营销、选址、开业、日常店铺管理等方面的教育培训；</p>
+      	  	</div>
+      	  	<div class="col-md-4 box">
+      	  	   <center>
+      	  		<img src="./images/join/tubiao3.png">
+      	  		<h3>店面统一</h3>
+      	  	  </center>
+      	  	  <br>
+      	  	   <p>总部将为加盟技术加工人员提供专业的培训，传授最正宗的德州扒鸡加工工艺，加盟店及从业人员可以接受统一的企业文化、市场营销、选址、开业、日常店铺管理等方面的教育培训；</p>
+      	  	</div>
+		</div>
+	</div>
+		<div class="section5">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;color: #000;">
+			   加入我们&nbsp&nbsp梦想起航
+			</h2>
+      	</div>
+      	<div class="w2" style="color: #000;min-height: 550px;margin-top:19px;">
+      	  	<div style="text-align:center;width: 900px;font-size:16px;margin: 0 auto;">我们希望合作前双向选择，合作后互利双赢</div>
+      	  	<div class="info fl  active2">
+      	  		<div class="info-t2">
+      	  	     咨询了解
+      	  		</div>
+                <div class="info-m">
+                   <div class="info-m-1">
+                	 <p>初步了解</p>
+                	<p>详情咨询</p>
+                	<p>实地考察</p> 
+                  </div>
+                  <div class="info-m-2">
+                	<div class='col-md-12'>
+                		<h3>初步了解</h3>
+                	    <p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>详情咨询</h3>
+                	    <p>您可以通过电话咨询来做进一步的访问和了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>实地考察</h3>
+                	<p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p>
+                	</div>
+                  </div>	
+                </div>
+      	  	</div>
+      	  	<div class="info fl">
+      	  		<div class="info-t">
+      	  	     合同洽谈
+      	  		</div>
+                <div class="info-m">
+                	<div class="info-m-1">
+                	 <p>初步了解</p>
+                	<p>详情咨询</p>
+                	<p>实地考察</p> 
+                  </div>
+                  <div class="info-m-2">
+                	<div class='col-md-12'>
+                		<h3>初步了解</h3>
+                	    <p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>详情咨询</h3>
+                	    <p>您可以通过电话咨询来做进一步的访问和了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>实地考察</h3>
+                	<p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p>
+                	</div>
+                  </div>	
+                </div>
+      	  	</div>
+      	  	<div class="info fl">
+      	  		<div class="info-t2">
+      	  	     专业培训
+      	  		</div>
+      	  		<div class="info-m">
+      	  			<div class="info-m-1">
+                	 <p>初步了解</p>
+                	<p>详情咨询</p>
+                	<p>实地考察</p> 
+                  </div>
+                  <div class="info-m-2">
+                	<div class='col-md-12'>
+                		<h3>初步了解</h3>
+                	    <p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>详情咨询</h3>
+                	    <p>您可以通过电话咨询来做进一步的访问和了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>实地考察</h3>
+                	<p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p>
+                	</div>
+                  </div>	
+      	  		</div>
+      	  	</div>
+      	  	<div class="info fl">
+      	  		<div class="info-t">
+      	  	     筹备开业
+      	  		</div>
+      	  		<div class="info-m">
+      	  			<div class="info-m-1">
+                	 <p>初步了解</p>
+                	<p>详情咨询</p>
+                	<p>实地考察</p> 
+                  </div>
+                  <div class="info-m-2">
+                	<div class='col-md-12'>
+                		<h3>初步了解</h3>
+                	    <p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>详情咨询</h3>
+                	    <p>您可以通过电话咨询来做进一步的访问和了解</p>
+                	</div>
+                	<div class='col-md-6'>
+                		<h3>实地考察</h3>
+                	<p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p>
+                	</div>
+                  </div>	
+      	  		</div>
+      	  	</div>
+	</div>
+	</div>
+	<div class="section6">
+		<div>
+		    <center><img style="margin-top: 70px;" src="images/line.png"></center>
+		  	<h2 style="text-align: center;color: #000;">
+			   联系我们
+			</h2>
+      	</div>
+      	<div id="allmap"></div>
+    </div>
+    <div class="section7">
+		
+      	<div class="w2" id="wrap" style="color: #000;min-height: 250px;margin-top: 20px;">
+      	  	<div class="col-md-3">
+      	  		<div class="kf"></div>
+      	  		<div class="kf">在线客服&nbsp;&nbsp;&nbsp;<span style="text-align: right;" class="fa fa-wechat"></span></div>
+      	  	</div>
+      	  	<div id="link" class="col-md-4">
+      	  		<div class="col-md-6">
+      	  			<img src="./images/join/taobao.jpg">
+      	  			<p>天猫商城</p>						
+      	  		</div>
+      	  		<div class="col-md-6">
+      	  		<img src="./images/join/taobao.jpg">
+      	  			<p>淘宝商城</p>						
+      	  		</div>
+      	  	</div>
+      	  	<div id="call" class="col-md-5">
+      	  		<p>业务销售部：0534-2390099</p>
+      	  		<p>连锁加盟部：0534-2390099</p>
+      	  		<p>技术学习部：0534-2390099</p>
+      	  		<p>电话：0534-2390088</p>
+      	  		<p>地址：德州市工业区慧路口19号</p>
+      	  	</div>
+		</div>
+    </div>	
+  <div id="back-up" onclick="GoTop()">
+    <img src="./images/arr.png" style="margin-left:11px;height: 90px;width: 8px;">
+    <p style="color: #000;text-align: center;">返回顶部</p>
+  </div>	  	
+	<div class="bottom">
+		<p>德州永盛斋扒鸡有限公司</p>
+	</div>
+	
+
+</body>
+<!-- <script type="text/javascript" src="js/fullpagescroll.js"></script>  -->
+<script type="text/javascript">
+// 百度地图API功能
+	var map = new BMap.Map("allmap");    // 创建Map实例
+	map.centerAndZoom(new BMap.Point(112.870919,27.886876), 16);  // 初始化地图,设置中心点坐标和地图级别
+	map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	map.setCurrentCity("湘潭");          // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+ 	/*现在是导航的UI效果 */ 
+   $(window).scroll(function(){
+		var tp = $(window).scrollTop();
+		if(tp == 0){
+      $('.topBar').css({'opacity':'1','background':'transparent'});
+      $("#back-up").css("display","none");
+    }else{
+      $('.topBar').css({'opacity':'0.8','background':'#DDD'});
+      $("#back-up").css("display","block");
+    }
+	});
+  /* 开场动画效果*/
+
+	$("#p1").add("#p2").slideDown(1500);
+//制作滑东效果
+   /*var arr=["<div class='col-md-12'><h3>初步了解</h3><p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p></div><div class='col-md-6'><h3>详情咨询</h3><p>您可以通过电话咨询来做进一步的访问和了解</p></div><div class='col-md-6'><h3>实地考察</h3><p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p></div>","<div class='col-md-12'><h3>初步了解</h3><p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p></div><div class='col-md-6'><h3>详情咨询</h3><p>您可以通过电话咨询来做进一步的访问和了解</p></div><div class='col-md-6'><h3>实地考察</h3><p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p></div>","<div class='col-md-12'><h3>初步了解</h3><p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p></div><div class='col-md-6'><h3>详情咨询</h3><p>您可以通过电话咨询来做进一步的访问和了解</p></div><div class='col-md-6'><h3>实地考察</h3><p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p></div>","<div class='col-md-12'><h3>初步了解</h3><p>您可以通过我们的官网、今冬旗舰店、天猫旗舰店等对我们品牌和产品做一个初步的了解</p></div><div class='col-md-6'><h3>详情咨询</h3><p>您可以通过电话咨询来做进一步的访问和了解</p></div><div class='col-md-6'><h3>实地考察</h3><p>到集团了解项目；对集团进行介绍，了解，咨询答疑</p></div>"];*/
+   $(".info").bind("mouseover",function (e){
+   	   $this=$(this);
+       $this.addClass("active2");
+       $(".info").not(this).removeClass("active2");
+
+       e.stopPropagation();
+
+   });
+ </script> 
+
+</html>	
